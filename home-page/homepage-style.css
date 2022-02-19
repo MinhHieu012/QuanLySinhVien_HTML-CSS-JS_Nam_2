@@ -1,10 +1,9 @@
-/* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu {
@@ -16,7 +15,8 @@
   transition: all 0.5s ease; /*hiệu ứng sau 0.5s sẽ hiện menu */
 }
 
-.menu i { /* css cho menu icons*/
+.menu i {
+  /* css cho menu icons*/
   color: #fff;
   min-width: 50px;
   font-size: 28px;
@@ -24,13 +24,14 @@
   line-height: 60px;
 }
 
-.menu li { 
+.menu li {
   position: relative;
   margin: 25px 0; /* khoảng cách giữa các icons */
   list-style: none; /* bỏ dấu của dạng list */
 }
 
-.menu li .text-icon { /* css chữ icon */
+.menu li .text-icon {
+  /* css chữ icon */
   position: absolute;
   top: -20px;
   left: calc(100% + 15px);
@@ -53,8 +54,8 @@
   transform: translateY(-50%);
 }
 
-.menu li a:hover{
-    background-color: #FFF; /* khi chỉ vào icons sẽ hiện màu */
+.menu li a:hover {
+  background-color: #fff; /* khi chỉ vào icons sẽ hiện màu */
 }
 
 .menu li a {
@@ -68,22 +69,210 @@
   background: #0066ff;
 }
 
-.menu li a:hover i{ /* khi trỏ vào icon -> hiệu ứng 0.5s và icon màu đen  */
+.menu li a:hover i {
+  /* khi trỏ vào icon -> hiệu ứng 0.5s và icon màu đen  */
   transition: all 0.5s ease;
   color: black;
 }
 
-.menu li i{
+.menu li i {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   border-radius: 12px;
 }
 
-.main-page{
-  position: relative;
-  transition: all 2s ease;
+/*---------- LOGO and Row ---------- */
+
+.home-page {
+  background-color: #ffffff;
+  width: max-width;
   height: max-content;
-  left: 78px;
-  width: calc(100% - 78px);
+}
+
+.logo img {
+  width: 400px;
+  height: 100px;
+  background-color: #ffffff;
+  margin-left: 600px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: 2s ease;
+}
+
+.row {
+  width: 1160px;
+  padding: 10px;
+  margin-left: 330px;
+  overflow: auto;
+  margin-bottom: 20px;
+  /* border: 2px solid black; */
+  transition: 1.7s ease;
+}
+
+.text {
+  width: 400px;
+  height: 250px;
+  text-align: left;
+  background: #ffffff;
+
+  float: left;
+  margin-left: 65px;
+  /* border: 2px solid black; */
+}
+
+.logoimage {
+  width: 400px;
+  height: 200px;
+  background: #ffffff;
+  float: right;
+  margin-top: 21px;
+  margin-right: 200px;
+  transition: 1s ease;
+}
+
+.row img {
+  width: 400px;
+  height: 200px;
+  /* border: 2px solid black; */
+}
+
+.row .dong1 {
+  color: #0a50b9d3;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 255, 0.267) -1px -2px 0.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+
+.row .dong2 {
+  color: #555555;
+  font-size: 33px;
+  font-weight: 550;
+  text-shadow: rgba(56, 56, 70, 0.432) -1px -2px 0.5em;
+  margin-top: 5px;
+}
+
+.row .dong3 {
+  color: #0a50b9d3;
+  font-size: 33px;
+  font-weight: 550;
+  text-shadow: rgba(0, 0, 255, 0.267) -1px -2px 0.5em;
+}
+
+.row .dong4 {
+  margin-top: 10px;
+  font-size: 17px;
+  text-shadow: rgba(0, 0, 255, 0.267) -1px -2px 0.5em;
+  font-weight: 400;
+  /* background-color: linear-gradient(to top, #3333ff 0%, #99ccff 100%); */
+}
+
+/*----------------------------------------------------*/
+
+/* Banner and text */
+.banner-text img {
+  width: 990px;
+  height: 620px;
+  margin-left: 315px;
+  background-color: rgb(35, 127, 212);
+  border-radius: 18px;
+  transition: 1s ease;
+}
+
+.banner-text p {
+  width: 800px;
+  margin-top: 10px;
+  margin-left: 410px;
+  text-align: center;
+  font-size: 17px;
+  text-shadow: rgba(0, 0, 255, 0.267) -1px -2px 0.5em;
+  font-weight: 400;
+}
+
+.home-page .hr {
+  background-color: #555555;
+  width: 410px;
+  margin-top: 30px;
+  margin-left: 600px;
+}
+
+/* Feature */
+.icons .bannertext {
+  margin-top: 20px;
+  margin-left: 640px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(35, 127, 212);
+}
+
+.icons .icon-title {
+  margin-top: 20px;
+  margin-left: 640px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 255, 0.267) -1px -2px 0.5em;
+  color: rgb(6, 107, 201);
+}
+
+.icons .icon1 {
+  margin-left: 430px;
+  font-size: 40px;
+  color: rgb(35, 127, 212);
+  text-shadow: rgba(1, 132, 255, 0.164) -1px -2px 0.5em;
+}
+
+.icons .icon2 {
+  margin-left: 200px;
+  font-size: 40px;
+  color: rgb(35, 127, 212);
+  text-shadow: rgba(1, 132, 255, 0.164) -1px -2px 0.5em;
+}
+.icons .icon3 {
+  margin-left: 200px;
+  font-size: 40px;
+  color: rgb(35, 127, 212);
+  text-shadow: rgba(1, 132, 255, 0.164) -1px -2px 0.5em;
+}
+.icons .icon4 {
+  margin-left: 200px;
+  font-size: 40px;
+  color: rgb(35, 127, 212);
+  text-shadow: rgba(1, 132, 255, 0.164) -1px -2px 0.5em;
+}
+
+.icons-title .title1 {
+  width: 170px;
+  margin-left: 370px;
+  background-color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+}
+
+.icons-title .title2 {
+  position: relative;
+  top: -24px;
+  width: 140px;
+  margin-left: 630px;
+  background-color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+}
+
+.icons-title .title3 {
+  position: relative;
+  top: -48px;
+  width: 80px;
+  margin-left: 905px;
+  background-color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+}
+.icons-title .title4 {
+  position: relative;
+  top: -72px;
+  width: 140px;
+  margin-left: 1140px;
+  background-color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
 }
