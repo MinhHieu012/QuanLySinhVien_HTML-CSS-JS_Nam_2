@@ -87,16 +87,18 @@
 .container {
   width: 1536px;
   height: 753px;
-  background-color: #efeffa;
+  background-image: url(../images/background-01.png);
+  background-position: center;
 }
 
 .container .row1-mychat {
   width: 352px;
   height: 753px;
-  background: #efeffa;
+  background-image: url(../images/background-01.png);
+  background-position: center;
   float: left;
   margin-left: 79px;
-  border-right: 2px solid rgba(0, 0, 0, 0.233);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 
 .container .row1-mychat .title {
@@ -125,10 +127,11 @@
 .container .row2 {
   width: 780px;
   height: 753px;
-  background-color: rgb(255, 255, 255);
+  background-image: url(../images/background-01.png);
+  background-position: left;
   margin-left: 400px;
   float: center;
-  border-right: 2px solid rgba(0, 0, 0, 0.233);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 
 .container .row2 .text {

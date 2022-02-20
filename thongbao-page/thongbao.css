@@ -86,7 +86,8 @@
 .thongbao {
   width: max-width;
   height: 753px;
-  background-color: rgb(255, 255, 255);
+  background-image: url(../images/background-01.png);
+  background-position: top;
 }
 
 .border-background {
@@ -95,7 +96,8 @@
   top: 60px;
   width: 700px;
   height: 500px;
-  background-color: #0065fc4d;
+  background-image: url(../images/background-01.png);
+  background-position: left;
   border: 2px solid black;
   border-radius: 20px;
 }
