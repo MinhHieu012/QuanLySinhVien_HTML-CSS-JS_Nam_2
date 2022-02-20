@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 78px;
+  background: #0d66eb;
+  padding: 6px 14px;
+  transition: all 0.5s ease; /*hiệu ứng sau 0.5s sẽ hiện menu */
+}
+
+.menu i {
+  /* css cho menu icons*/
+  color: #fff;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.menu li {
+  position: relative;
+  margin: 25px 0; /* khoảng cách giữa các icons */
+  list-style: none; /* bỏ dấu của dạng list */
+}
+
+.menu li .text-icon {
+  /* css chữ icon */
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap; /* chữ ko bị xuống dòng */
+  pointer-events: none;
+}
+
+.menu li:hover .text-icon {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu li a:hover {
+  background-color: #fff; /* khi chỉ vào icons sẽ hiện màu */
+}
+
+.menu li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 1s ease;
+  background: #0066ff;
+}
+
+.menu li a:hover i {
+  /* khi trỏ vào icon -> hiệu ứng 0.5s và icon màu đen  */
+  transition: all 0.5s ease;
+  color: black;
+}
+
+.menu li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+/*----------------Thông Báo---------------------------------------*/
+.thongbao {
+  width: max-width;
+  height: 753px;
+  background-color: rgb(255, 255, 255);
+}
+
+.border-background {
+  position: relative;
+  left: 450px;
+  top: 60px;
+  width: 700px;
+  height: 500px;
+  background-color: #0065fc4d;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.border-background .title {
+  position: relative;
+  left: 200px;
+  top: 20px;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: rgba(14, 14, 15, 0.267) 5px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.border-background .input-field {
+  position: relative;
+  top: 60px;
+  left: 100px;
+  width: 420px;
+  height: 80px;
+  border: 2px solid #0066ffce;
+  border-radius: 10px 0 0 10px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.border-background .input-field:focus {
+  outline: 1px solid #0066ffce;
+}
+
+.border-background .button {
+  position: relative;
+  top: 60px;
+  left: 96px;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #0066ffce;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.border-background .button:focus {
+  outline: 1px solid #0066ffce;
+}

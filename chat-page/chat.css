@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 78px;
+  background: #0d66eb;
+  padding: 6px 14px;
+  transition: all 0.5s ease; /*hiệu ứng sau 0.5s sẽ hiện menu */
+}
+
+.menu i {
+  /* css cho menu icons*/
+  color: #fff;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.menu li {
+  position: relative;
+  margin: 25px 0; /* khoảng cách giữa các icons */
+  list-style: none; /* bỏ dấu của dạng list */
+}
+
+.menu li .text-icon {
+  /* css chữ icon */
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap; /* chữ ko bị xuống dòng */
+  pointer-events: none;
+}
+
+.menu li:hover .text-icon {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu li a:hover {
+  background-color: #fff; /* khi chỉ vào icons sẽ hiện màu */
+}
+
+.menu li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 1s ease;
+  background: #0066ff;
+}
+
+.menu li a:hover i {
+  /* khi trỏ vào icon -> hiệu ứng 0.5s và icon màu đen  */
+  transition: all 0.5s ease;
+  color: black;
+}
+
+.menu li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+/*------------------------------------------------------*/
+
+/*------------------Chat--------------------------------*/
+.container {
+  width: 1536px;
+  height: 753px;
+  background-color: #efeffa;
+}
+
+.container .row1-mychat {
+  width: 352px;
+  height: 753px;
+  background: #efeffa;
+  float: left;
+  margin-left: 79px;
+  border-right: 2px solid rgba(0, 0, 0, 0.233);
+}
+
+.container .row1-mychat .title {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container .row1-mychat .title:hover {
+  color: #0066ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container .row1-mychat i {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #0066ff;
+  top: 15px;
+  right: 1120px;
+  cursor: pointer;
+}
+
+.container .row2 {
+  width: 780px;
+  height: 753px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 400px;
+  float: center;
+  border-right: 2px solid rgba(0, 0, 0, 0.233);
+}
+
+.container .row2 .text {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  color: #0000008e;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container .row3 {
+  position: absolute;
+  left: 1180px;
+  top: 10px;
+  background: #efeffa;
+}

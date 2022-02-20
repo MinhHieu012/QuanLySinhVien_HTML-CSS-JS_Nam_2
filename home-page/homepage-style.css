@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .menu {
@@ -249,15 +250,17 @@
   margin-left: 370px;
   background-color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+  color: #000000;
 }
 
-.icons-title .title2 {
+.icons-title a .title2 {
   position: relative;
   top: -24px;
   width: 140px;
   margin-left: 630px;
   background-color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+  color: #000000;
 }
 
 .icons-title .title3 {
@@ -267,6 +270,7 @@
   margin-left: 905px;
   background-color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+  color: #000000;
 }
 .icons-title .title4 {
   position: relative;
@@ -275,4 +279,5 @@
   margin-left: 1140px;
   background-color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.267) -1px -2px 0.5em;
+  color: #000000;
 }
