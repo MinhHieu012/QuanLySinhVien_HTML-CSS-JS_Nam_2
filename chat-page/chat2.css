@@ -140,6 +140,8 @@
   padding: 10px;
   border-radius: 40px;
   font-size: 15px;
+  background-image: url(../images/background-01.png);
+  background-position: left;
 }
 
 .search [type="text"] {

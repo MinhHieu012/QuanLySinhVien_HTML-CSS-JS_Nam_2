@@ -146,3 +146,18 @@
 .border-background .button:focus {
   outline: 1px solid #0066ffce;
 }
+
+.noidung p {
+  position: relative;
+  top: 100px;
+  left: 102px;
+  height: 150px;
+  width: 500px;
+
+  background-image: url(../images/upscalebackground.jpg);
+  background-position: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 2px solid #0066ffce;
+  border-radius: 10px;
+}
