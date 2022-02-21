@@ -107,6 +107,7 @@
   border-radius: 20px;
   color: rgb(0, 0, 0);
   text-shadow: rgba(0, 0, 0, 0.267) 2px 2px;
+  transition: all 1.25s ease;
 }
 
 .image1 {
@@ -117,6 +118,7 @@
   height: 520px;
   border: 2px solid black;
   border-radius: 10px;
+  transition: all 1.25s ease;
 }
 
 .image2 {
@@ -127,4 +129,5 @@
   left: 400px;
   border: 2px solid black;
   border-radius: 10px;
+  transition: all 1.25s ease;
 }
