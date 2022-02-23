@@ -1,0 +1,17 @@
+phân hệ client -> trang mà xem trên mạng
+1. khảo sát giao diện của website mà đề tài các bạn chọn
+2. xác định bố cục của website các bạn định trình bày
+trang chủ có gì? -> xác định bố cục
+trang danh sách sản phẩm có gì? -> xác định bố cục
+trang chi tiết sản phẩm có gì?-> xác định bố cục
+trang giới thiệu-> xác định bố cục
+trang liên hệ ...-> xác định bố cục
+trang thanh toán -> xác định bố cục
+3. tìm kiếm các tài nguyên: icon, image, video, css, js
+4. xây dựng code gọi ra các tài nguyên 
+-> xây dựng khung html
+-> viết css cho khung đó
+-> tận dung bootstrap -> xây dựng khung theo hướng có sẵn
+-> js cho khung đó
+phân hệ admin
+

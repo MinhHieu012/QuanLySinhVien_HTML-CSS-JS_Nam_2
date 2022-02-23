@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./students.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./thongbao.css">
-    <title>Thông báo</title>
+    <script src="https://kit.fontawesome.com/b852204901.js" crossorigin="anonymous"></script>
+    <title>Sinh Viên</title>
 </head>
 <body>
     <div class="menu">
@@ -43,14 +44,14 @@
             <!--Tin Nhắn-->
             <li>
                 <a href="../chat-page/chat.html">
-                    <i class='bx bx-chat' ></i>
+                    <i class='bx bx-chat'></i>
                 </a>
                 <span class="text-icon">Tin Nhắn</span>
             </li>
 
             <!--Thông Báo-->
             <li>
-                <a href="./thongbao.html">
+                <a href="../thongbao-page/thongbao.html">
                     <i class='bx bxs-bell-ring'></i>
                 </a>
                 <span class="text-icon">Thông Báo</span>
@@ -66,18 +67,46 @@
         </li>
         </ul>
     </div>
-    <!-------------------Thông Báo----------------------------->
-    <div class="thongbao">
-        <div class="border-background">
-            <label for="" class="title">Thông Báo</label>
-            <input type="text" class="input-field" id="" placeholder="Thêm thông báo..." required>
-            <button type="submit" class="button">Thêm</button>
 
-            <div class="noidung">
-                <p>Thông báo: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae natus, dolorem mollitia rem vero optio, officia architecto inventore similique consequatur id necessitatibus perferendis magnam ducimus repellat modi molestias laudantium nostrum.</p>
-            </div>
+    <!-------------Sinh Viên--------------->
 
-        </div>    
+    <!--Tiêu đề "Quản Lý Sinh Viên"-->
+    <div class="background-title">
+        <span class="title">Quản Lý Sinh Viên</span>
     </div>
+
+    <!--Form add sinh viên-->
+    <div class="background-form">
+        <div class="student-form">
+            <span class="title">Thông tin Sinh viên</span>
+            <br>
+            <label>Họ và tên:</label>
+            <input type="text" id="fullname" placeholder="Nhập họ tên sinh viên">
+            <br>
+            <label>Ngày sinh:</label>
+            <input type="date" id="birthdate" placeholder="Nhập ngày sinh" min="01-01-1990" max="23-02-2022">
+            <br>
+            <label>Lớp:</label>
+            <input type="text" id="class" placeholder="Nhập tên lớp">
+            <br>
+            <label>Số điện thoại:</label>
+            <input type="number" id="phonenumber" placeholder="Nhập số điện thoại">
+            <br>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Nhập email">
+            <br>
+            <label>Địa chỉ:</label>
+            <input type="text" id="address" placeholder="Nhập địa chỉ">
+            <br>
+            <label class="gender-1">Giới tính:</label>
+            <input type="radio" class="gender" name="gender" id="gender1" value="1"> <label class="nam">Nam</label>
+            <input type="radio" class="gender" name="gender" id="gender2" value="2"> <label class="nu">Nữ</label>
+            <br>
+            <button class="button">Thêm</button>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
