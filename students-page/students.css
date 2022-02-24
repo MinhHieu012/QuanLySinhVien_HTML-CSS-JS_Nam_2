@@ -89,8 +89,6 @@
 .background-title {
     width: 100%;
     height: 80px;
-    background-image: url(../images/upscalebackground.jpg);
-    background-position: left;
 }
 
 .background-title .title {
@@ -106,11 +104,8 @@
 
 /*Form add sinh viên*/
 .background-form {
-    position: relative;
     width: 808px;
     height: 500px;
-    background-image: url(../images/upscalebackground.jpg);
-    border: 1px solid black;
     border-radius: 10px;
     top: 10px;
     left: 90px;
@@ -121,8 +116,8 @@
     left: 15%;
     top: 15px;
     width: 600px;
-    height: 500px;
-    /* background-color: rgb(180, 95, 95); */
+    height: 540px;
+    /* background-color: rgb(150, 138, 138); */
     padding-left: 10px;
     padding-top: 5px;
 }
@@ -130,60 +125,79 @@
 .student-form .title {
     position: relative;
     top: 7px;
-    left: 165px;
+    left: 7px;
     width: 200px;
     height: 200px;
-    background-image: url(../images/upscalebackground.jpg);
-    background-position: center;
     font-size: 25px;
-    color: black;
-    border: 2px solid black;
     border-radius: 5px;
     padding: 8px 8px 8px 8px;
+}
+
+.student-form .title::before {
+  position: absolute;
+  content: '';
+  left: 10px;
+  bottom: 1px;
+  height: 5px;
+  width: 150px;
+  background-color: #4070f4;
+  border-radius: 5px;
 }
 
 .student-form label {
     position: relative;
     display: inline-block;
     width: 120px;
-    top: 30px;
-    margin: 10px;
+    top: 25px;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }    
-
-.student-form .nam, .student-form .nu {
-    position: relative;
-    top: 26px;
-}
 
 .student-form input {
     position: relative;
     width: 400px;
-    height: 35px;
-    top: 30px;
+    height: 40px;
+    top: 20px;
     font-size: 15px;
-    border: 2px solid rgb(53, 97, 218);
-    border-radius: 8px;
-    padding-left: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.623);
+    background-color: white;
+}
+
+.student-form input:hover {
+  border: 2px solid rgba(0, 0, 0, 0.603);
+}
+
+
+.student-form select {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin-top: 32px;
+    border: 2px solid rgba(128, 128, 128, 0.623);
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 .student-form .gender {
-    position: relative;
-    width: 15px;
-    top: 38px;
-}
-
-.student-form .gender-1 {
-    position: relative;
-    top: 24px;
+  position: relative;
+  top: 5px;
 }
 
 .student-form button {
     position: relative;
-    top: 40px;
-    left: 40%;
-    width: 100px;
-    height: 35px;
-    background-image: url(../images/upscalebackground.jpg);
-    background-position: right;
-    border-radius: 10px;
+    top: 15px;
+    left: 165px;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #033681;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
 }

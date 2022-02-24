@@ -78,31 +78,37 @@
     <!--Form add sinh viên-->
     <div class="background-form">
         <div class="student-form">
-            <span class="title">Thông tin Sinh viên</span>
+            <span class="title"><u>Thông tin Sinh viên</u></span>
             <br>
-            <label>Họ và tên:</label>
+            <label>Họ và tên</label>
             <input type="text" id="fullname" placeholder="Nhập họ tên sinh viên">
             <br>
-            <label>Ngày sinh:</label>
+            <label>Ngày sinh</label>
             <input type="date" id="birthdate" placeholder="Nhập ngày sinh" min="01-01-1990" max="23-02-2022">
             <br>
-            <label>Lớp:</label>
+            <label>Lớp</label>
             <input type="text" id="class" placeholder="Nhập tên lớp">
             <br>
-            <label>Số điện thoại:</label>
-            <input type="number" id="phonenumber" placeholder="Nhập số điện thoại">
+            <label>Số điện thoại</label>
+            <input type="text" id="phonenumber" placeholder="Nhập số điện thoại">
             <br>
-            <label>Email:</label>
+            <label>Email</label>
             <input type="email" id="email" placeholder="Nhập email">
             <br>
-            <label>Địa chỉ:</label>
+            <label>Địa chỉ</label>
             <input type="text" id="address" placeholder="Nhập địa chỉ">
             <br>
-            <label class="gender-1">Giới tính:</label>
+            <!-- <label class="gender-1">Giới tính:</label>
             <input type="radio" class="gender" name="gender" id="gender1" value="1"> <label class="nam">Nam</label>
-            <input type="radio" class="gender" name="gender" id="gender2" value="2"> <label class="nu">Nữ</label>
+            <input type="radio" class="gender" name="gender" id="gender2" value="2"> <label class="nu">Nữ</label> -->
+            <label class="gender">Giới tính</label>
+                <select name="gender" id="gender">
+                    <option value="">Nam</option>
+                    <option value="">Nữ</option>
+                    <option value="">Khác</option>
+                </select>
             <br>
-            <button class="button">Thêm</button>
+            <button>Thêm</button>
         </div>
     </div>
 
