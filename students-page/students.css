@@ -104,9 +104,9 @@
 
 /*Form add sinh viên*/
 .background-form {
-    width: 808px;
-    height: 500px;
-    border-radius: 10px;
+  position: relative;
+    width: 1415px;
+    height: 567px;
     top: 10px;
     left: 90px;
 }
@@ -117,15 +117,17 @@
     top: 15px;
     width: 600px;
     height: 540px;
+    
     /* background-color: rgb(150, 138, 138); */
     padding-left: 10px;
     padding-top: 5px;
+    /* border: 1px solid black; */
 }
 
 .student-form .title {
     position: relative;
     top: 7px;
-    left: 7px;
+    left: -30px;
     width: 200px;
     height: 200px;
     font-size: 25px;
@@ -140,7 +142,7 @@
   bottom: 1px;
   height: 5px;
   width: 150px;
-  background-color: #4070f4;
+  background-color: #0066ff;
   border-radius: 5px;
 }
 
@@ -148,7 +150,8 @@
     position: relative;
     display: inline-block;
     width: 120px;
-    top: 25px;
+    top: 21px;
+    left: -40px;
     margin: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -159,6 +162,7 @@
     width: 400px;
     height: 40px;
     top: 20px;
+    left: -65px;
     font-size: 15px;
     border-radius: 5px;
     padding-left: 10px;
@@ -176,6 +180,7 @@
     position: relative;
     width: 400px;
     height: 40px;
+    left: -65px;
     margin-top: 32px;
     border: 2px solid rgba(128, 128, 128, 0.623);
     background-color: white;
@@ -191,7 +196,7 @@
 .student-form button {
     position: relative;
     top: 15px;
-    left: 165px;
+    left: 93px;
     width: 110px;
     height: 40px;
     border-radius: 5px;
@@ -201,3 +206,87 @@
     font-size: 17px;
     font-weight: 600;
 }
+
+.student-form img {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  left: 520px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+/*----------------Table head----------------*/
+.student-table {
+  position: relative;
+  width: 1415px;
+  height: 700px;
+  /* background-color:aqua; */
+  left: 90px;
+  top: 10px;
+}
+
+.background-head {
+  position: relative;
+  top: 10px;
+  right: -90px;
+  left: 20px;
+  width: 1373px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.212);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px 5px 0px 0;
+}
+
+.background-head label, .background-head select {
+  position: relative;
+  padding-right: 5px;
+  top: -3px;
+}
+
+.background-head select {
+  width: 150px;
+  height: 28px;
+  top: -4px;
+  border-radius: 5px;
+}
+
+.background-head button {
+  position: relative;
+  top: -4px;
+  left: 800px;
+  width: 170px;
+  height: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: #0066ff;
+  color: white;
+}
+
+/*Student-table*/
+.table-1st {
+  position: relative;
+  border-collapse: collapse;
+  top: 13px;
+  left: 20px;
+  width: 1373px;
+  height: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.table-1st td {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.table-1st th {
+  border: 2px solid rgba(29, 91, 184, 0.925);
+  padding: 10px;
+}
+
+
