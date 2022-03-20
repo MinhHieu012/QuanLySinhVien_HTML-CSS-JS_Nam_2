@@ -124,6 +124,13 @@
     /* border: 1px solid black; */
 }
 
+.check {
+  position: relative;
+  color: red;
+  top: 20px;
+  left: 101px;
+}
+
 .student-form .title {
     position: relative;
     top: 7px;
@@ -181,7 +188,8 @@
     width: 400px;
     height: 40px;
     left: -65px;
-    margin-top: 32px;
+
+    top: -5px;
     border: 2px solid rgba(128, 128, 128, 0.623);
     background-color: white;
     border-radius: 5px;
@@ -190,13 +198,13 @@
 
 .student-form .gender {
   position: relative;
-  top: 5px;
+  top: -4px;
 }
 
 .student-form button {
     position: relative;
-    top: 15px;
-    left: 93px;
+    top: 20px;
+    left: 100px;
     width: 110px;
     height: 40px;
     border-radius: 5px;
@@ -223,7 +231,7 @@
   height: 700px;
   /* background-color:aqua; */
   left: 90px;
-  top: 10px;
+  top: 120px;
 }
 
 .background-head {

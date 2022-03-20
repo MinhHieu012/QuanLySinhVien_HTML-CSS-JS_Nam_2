@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/b852204901.js" crossorigin="anonymous"></script>
     <title>Sinh Viên</title>
 </head>
-<body>
+<body onload="writeListStudents()">
     <div class="menu">
         <div class="logo-home">
             <a href="../home-page/homepage.html"><i class='bx bxs-home'></i></a>
@@ -80,39 +80,51 @@
         <div class="student-form">
             <span class="title"><u>Thông tin Sinh viên</u></span>
             <br>
-            <label>Họ và tên</label>
+            <label>Họ và tên(*)</label>
             <input type="text" id="fullname" placeholder="Nhập họ tên sinh viên">
+            <span id="fullname-check" class="check"></span> 
             <br>
-            <label>Ngày sinh</label>
-            <input type="date" id="birthdate" placeholder="Nhập ngày sinh" min="01-01-1990" max="23-02-2022">
+            <label>ID(*)</label>
+            <input type="text" id="studentid" placeholder="Nhập mã số Sinh viên">
+            <span id="studentid-check" class="check"></span>
             <br>
-            <label>Lớp</label>
+            <label>Ngày sinh(*)</label>
+            <input type="date" id="birthdate" placeholder="Nhập ngày sinh" min="01-01-1997" max="23-02-2022">
+            <span id="birthdate-check" class="check"></span>
+            <br>
+            <label>Lớp(*)</label>
             <input type="text" id="class" placeholder="Nhập tên lớp">
+            <span id="class-check" class="check"></span>
             <br>
-            <label>Số điện thoại</label>
+            <label>Điện thoại(*)</label>
             <input type="text" id="phonenumber" placeholder="Nhập số điện thoại">
+            <span id="phonenumber-check" class="check"></span>
             <br>
             <label>Email</label>
             <input type="email" id="email" placeholder="Nhập email">
+            <span id="email-check" class="check"></span>
             <br>
-            <label>Địa chỉ</label>
+            <label>Địa chỉ(*)</label>
             <input type="text" id="address" placeholder="Nhập địa chỉ">
+            <span id="address-check" class="check"></span>
+            <br>
             <br>
     
-            <label class="gender">Giới tính</label>
+            <label class="gender">Giới tính(*)</label>
                 <select name="gender" id="gender">
-                    <option value="">Nam</option>
-                    <option value="">Nữ</option>
-                    <option value="">Khác</option>
+                    <option id="male">Nam</option>
+                    <option id="female">Nữ</option>
+                    <option id="other">Khác</option>
                 </select>
+                <span id="gender-check" class="check"></span>    
             <br>
-            <button>Thêm</button>
+            <button onclick="save()" alert="Done!">Thêm</button>
 
             <img src="../images/quanlysinhvien.png" alt="quanlysinhvien">
         </div>
     </div>
 
-    <div class="student-table">
+    <div class="student-table" id="student-table">
         <div class="background-head">
             <label class="gender">Lớp:</label>
             <select name="gender" id="gender">
@@ -124,8 +136,8 @@
             <button>Xuất ra Excel</button>
         </div>
 
-        <table class="table-1st">
-            <thead>
+        <table id="table-student" class="table-1st">
+            <!-- <thead>
                 <tr>
                     <td>Họ và tên</td>
                     <td>Ngày sinh</td>
@@ -135,11 +147,10 @@
                     <td>Địa chỉ</td>
                     <td>Giới tính</td>
                 </tr>
-            </thead>
-        </table>
-        
+            </thead> -->
+        </table>        
     </div>
-
-
+    <script src="../Lodash Library/lodash.js"></script>
+    <script src="./students.js"></script>
 </body>
 </html>
