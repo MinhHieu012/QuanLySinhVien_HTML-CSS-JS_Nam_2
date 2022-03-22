@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <body>
         <div class="container">
 
@@ -20,14 +19,14 @@
                     <!--Input account-->
                     <div class="input">
                         <i class="uil uil-envelope icon"></i>
-                        <input type="text" class="form-input" placeholder="Enter your email" required>
+                        <input type="text" id="username" class="form-input" placeholder="Enter your email" required>
                         <!-- <label for="name" class="form-label">Enter your email</label> -->
                     </div>
                     
                     <!--Input password-->
                     <div class="input">
                         <i class="uil uil-lock icon"></i>
-                        <input type="password" class="form-input" placeholder="Password" required>
+                        <input type="password" id="password" class="form-input" placeholder="Password" required>
                         <!-- <label for="name" class="form-label">Password</label> -->
                     </div>
 
@@ -38,10 +37,21 @@
                         
                     <!--Login button-->
                     <div class="input button">
-                        <a href="./home-page/homepage.html"><input type="button" value="Login"></a>
+                        <input type="submit" value="Login" onclick="validate()">
                     </div>
                 </form>
         </div>
     </body> 
-</body>
+    <script>
+        function validate() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if (username == 'admin@gmail.com' && password == '0967710509') {
+        window.open("https://minhhieu012.github.io/project-web/home-page/homepage.html");
+    }
+    else {
+        alert("Email hoặc Mật khẩu không đúng ");
+    }
+}
+    </script>
 </html>
